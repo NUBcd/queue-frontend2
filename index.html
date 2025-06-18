@@ -115,11 +115,11 @@
 
   socket.on('update', (data) => {
     updateAll(data.currentNumbers);
-    speak(`Treasury number ${data.globalQueue}`);
+    speak(`Now serving number ${data.globalQueue}`);
   });
 
   socket.on('repeat', (data) => {
-    speak(`Treasury number ${data.number} again at counter ${data.counterId}`);
+    speak(`Now serving number ${data.number} again at counter ${data.counterId}`);
   });
 
   function sendAction(action, counterId) {
