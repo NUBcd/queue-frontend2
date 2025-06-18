@@ -115,7 +115,7 @@
 
   socket.on('update', (data) => {
     updateAll(data.currentNumbers);
-    speak(`Treasury number ${data.globalQueue}at counter ${data.counterId}`);
+    speak(`Treasury number ${data.globalQueue}`);
   });
 
   socket.on('repeat', (data) => {
